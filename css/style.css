@@ -8,6 +8,7 @@
 
 body {
     background-image: url("../images/jake-buonemani-WvK0EsbfG7U-unsplash.jpg");
+;
  
     background-size: cover;
     
@@ -25,7 +26,7 @@ header {
     position: absolute;
    
     transform: translateY(10vh); 
-    padding-bottom: 20vh;
+    padding-bottom: 0vh;
     width: 70%; 
     font-size: 3rem;
   }
@@ -56,18 +57,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    text-align: left; /* Alinea el texto a la izquierda por defecto */
-    color: #FFFFFF; /* Ajustar al color de texto deseado */
-    margin: 20px; /* Añadir margen alrededor del texto */
-    /* Añade cualquier otro estilo que necesites */
+    text-align: left; 
+    color: #FFFFFF; 
+    margin: 20px; 
 }
 
 .synergy-text-container {
-    width: 100%; /* O el ancho que desees para cada columna de texto */
-    /* Estilos adicionales para los párrafos */
-    margin-bottom: 5vh;
+    width: 100%;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
     display: flex;
     align-items: center;
+    margin: auto;
     justify-content: space-between;
 }
 
@@ -84,9 +85,53 @@ header {
     font-size: 1rem;
     width: 40%;
 }
+.services-title{font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color:rgba(146, 45, 255, 0.754);
+    text-decoration:overline;
+    text-align: center;
+    margin-top: 5vh;
+}
+.services-img{
+    align-items: center;
+    margin: auto;
+}
+.about-text-container {
+    width: 100%;
+    padding-bottom: 2vh;
+    color: #FFFFFF; 
+    text-align: justify;
+    margin: 20px; 
+}
+.first-text {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    width: 50%;
+}
+#about{
+    height: auto;
+
+}
+.about-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color:rgba(146, 45, 255, 0.754);
+    text-decoration:overline;
+    text-align: center;
+}
+.second-text {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    width: 50%;
+    margin-top: 5vh;
+}
+
 #symbol{
     font-size: 6rem;
     color: #7B58FA;
+    font-family: 'Poppins', sans-serif;
 }
 
 #image-sat {
@@ -94,7 +139,7 @@ header {
     left: 5vw; 
     width: 10vw;
     margin-left: -10vh;
-    bottom: 30vh; /* Ajustado para usar 'bottom' en lugar de 'transform: translateY' */
+    bottom: 30vh; 
     animation: spin-translate 20s linear infinite;
   }
   
@@ -103,7 +148,7 @@ header {
       transform: rotate(0deg) translateY(20vw);
     }
     to {
-      transform: rotate(360deg) translateY(40vh); /* Se ajusta la traslación para que ocurra durante el giro */
+      transform: rotate(360deg) translateY(40vh); 
     }
   }
   
@@ -173,13 +218,12 @@ h2#subtitle{
 
 .approach-title {
     grid-area: approach-title;
-    /* Estilos adicionales para el título de enfoque */
 }
 .approach-image {
     grid-area: approach-image;
-    display: flex; /* Establece el contenedor de la imagen como un contenedor flex */
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 @keyframes spin {
     from {
@@ -191,50 +235,35 @@ h2#subtitle{
 }
 
 .approach-image img {
-    max-width: 60%; /* Establece un ancho máximo para la imagen */
-    max-height: 60%; /* Establece una altura máxima para la imagen */
+    max-width: 60%; 
+    max-height: 60%;
     object-fit: contain;
-    animation: spin 80s linear infinite;
+    animation: spin 50s linear infinite;
+    
 }
 
 .advantages-list {
     grid-area: advantages-list;
-    /* Estilos adicionales para la lista de ventajas */
+    
 }
 
 .approach-image {
     grid-area: approach-image;
-    /* Estilos adicionales para la imagen de enfoque */
+   
 }
 
-/* Estilos adicionales para la lista */
+
 .advantages-list ul {
-    list-style: none; /* elimina los bullets de la lista */
-    padding: 0; /* elimina el padding por defecto */
-    /* otros estilos que desees para la lista */
+    list-style: none;
+    padding: 0; 
 }
 
-/* Estilos adicionales para los elementos de la lista */
 .advantages-list li {
-    margin-bottom: 10px; /* espacio entre los elementos de la lista */
-    /* otros estilos que desees para los elementos de la lista */
+    margin-bottom: 10px; 
 }
 
-/* Asegúrate de añadir media queries para hacer el diseño responsivo */
-@media (max-width: 768px) { /* ajusta según tus necesidades */
-    .grid-container {
-        grid-template-columns: 1fr; /* una sola columna para pantallas pequeñas */
-        grid-template-rows: auto; /* una sola fila de altura automática */
-        grid-template-areas: 
-            "methodology-title"
-            "advantages-title"
-            "advantages-list"
-            "approach-title"
-            "approach-image";
-    }
-}
 
-/* Media Queries para ajustar el tamaño de la imagen en pantallas más pequeñas */
+
 @media (max-width: 768px) {
     
     h2#about{
@@ -270,8 +299,8 @@ h2#subtitle{
        
     }
     h2#subtitle{
-        margin-top: 7vh;
-        padding-bottom: 5vh;
+        margin-top: 12vh;
+     margin-bottom: 6vh;
         padding-right: 0%;
         font-size: 3rem;
     }
@@ -282,6 +311,38 @@ h2#subtitle{
         display: block;
         margin-top: 10vh;
         width: 50vw;
+        margin: auto;
+    }  
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "methodology-title"
+            "approach-title"
+            "advantages-title"
+            "advantages-list"
+           
+            "approach-image";
+            font-size: 0.8rem;
+    }
+    .methodology-title,.advantages-title{
+        font-size: 2rem;
+    }
+    .left-text {
+       width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+       
+    }
+    
+    .right-text {
+       
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.7rem;
+       
+    }
+    #image-sat{width: 20vw;}
+    
 }
 
 @media (max-width: 480px) {
@@ -290,10 +351,10 @@ h2#subtitle{
         max-width: 50%; 
     }
     h2#subtitle{
-        margin-top: 5vh;
-        
+        margin-top: 4vh;
+        margin-bottom: 3vh;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding: 0%;
     }
     .titulo-header {
@@ -327,7 +388,10 @@ h2#subtitle{
        
     }
     #roadmap-col{
-        width: 80vw;
+        width: 70vw;
+        margin: auto;
     }
-}
+    #image-sat{
+        width: 20vw;
+    }
 }
