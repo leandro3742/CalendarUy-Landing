@@ -1,3 +1,8 @@
+body {
+    background-image: url("../images/jake-buonemani-WvK0EsbfG7U-unsplash.jpg"); 
+    background-size: cover; 
+    height: 100%;
+}
 
 .container {
     width: 80%; 
@@ -6,14 +11,6 @@
     height: 100vh;
 }
 
-body {
-    background-image: url("../images/jake-buonemani-WvK0EsbfG7U-unsplash.jpg");
-;
- 
-    background-size: cover;
-    
-   
-}
 
 section{
     height: 100vh;
@@ -91,6 +88,7 @@ header {
     text-decoration:overline;
     text-align: center;
     margin-top: 5vh;
+    /* border-top: 3px solid rgba(146, 45, 255, 0.754); */
 }
 .services-img{
     align-items: center;
@@ -102,6 +100,7 @@ header {
     color: #FFFFFF; 
     text-align: justify;
     margin: 20px; 
+    
 }
 .first-text {
     text-align: left;
@@ -110,15 +109,17 @@ header {
     width: 50%;
 }
 #about{
-    height: auto;
+    height: 100vh;
+    
 
 }
 .about-title{
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     color:rgba(146, 45, 255, 0.754);
-    text-decoration:overline;
+    text-decoration:overline;    
     text-align: center;
+    /* border-top: 3px solid rgba(146, 45, 255, 0.754); */
 }
 .second-text {
     text-align: right;
