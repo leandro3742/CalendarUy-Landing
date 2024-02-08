@@ -1,14 +1,22 @@
+
+html {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
 body {
     background-image: url("../images/jake-buonemani-WvK0EsbfG7U-unsplash.jpg"); 
     background-size: cover; 
-    height: 100%;
+
+    width: 100%;
+
 }
 
 .container {
     width: 80%; 
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
+   
 }
 
 
@@ -41,6 +49,24 @@ header {
     
     font-family: 'Poppins', sans-serif;
     
+}
+#contact{
+    background-color:rgb(93, 18, 173);
+    width: 100vw; 
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw; 
+    margin-right: -50vw;
+    
+}
+#contact h2 {
+    color: white; /* Cambia el color de texto de las etiquetas a blanco */
+    font: 2rem 'Poppins', sans-serif; /* Cambia el tipo de letra y el tamaño */
+}
+#contact label {
+    color: white; /* Cambia el color de texto de las etiquetas a blanco */
+    font: 1.5rem 'Poppins', sans-serif; /* Cambia el tipo de letra y el tamaño */
 }
 #image-cohete{
     position: absolute;
@@ -102,31 +128,51 @@ header {
     margin: 20px; 
     
 }
-.first-text {
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    width: 50%;
-}
-#about{
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el título y el contenedor de texto */
     height: 100vh;
-    
-
 }
-.about-title{
+
+.about-title {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-    color:rgba(146, 45, 255, 0.754);
-    text-decoration:overline;    
+    color: rgba(146, 45, 255, 0.754);
+    text-decoration: overline;
     text-align: center;
-    /* border-top: 3px solid rgba(146, 45, 255, 0.754); */
+    margin-bottom: 5vh; /* Espacio entre el título y el contenedor de texto */
 }
-.second-text {
-    text-align: right;
+
+.about-text-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr; /* Dos columnas de igual tamaño */
+    width: 100%; /* Asegúrate de ajustar el ancho según necesites */
+}
+
+.grid-item {
+    padding: 20px; /* Añade un poco de padding para separación */
+}
+
+/* Ajusta la segunda columna para que se extienda por dos filas */
+.grid-item.large {
+    grid-row: 1 / span 2; /* Ocupa dos filas */
+    align-self: start; 
+    
+}
+
+.first-text, .second-text {
     font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+/* Ajustes específicos para .first-text y .second-text si son necesarios */
+.first-text {
+    font-size: 2rem;
+}
+
+.second-text {
     font-size: 1.5rem;
-    width: 50%;
-    margin-top: 5vh;
 }
 
 #symbol{
