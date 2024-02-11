@@ -154,8 +154,13 @@
                     Web & Mobile solutions
                 </h2>
                 <!-- <button class="button-contact">Contactanos!</button> -->
-                <button type="button"
-                    class="button-contact text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Contáctanos</button>
+                <a href="#contact"
+                    class="button-contact text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 inline-flex items-center justify-center"
+                    style="position: absolute; transform: translateY(65vh); margin-left: 25%; margin-top: 50px; border-radius: 100px; width: 300px; height: 7vh; font-size: 2rem; background-color: rgba(255, 255, 255, 0.7); font-family: 'Poppins', sans-serif;">
+                    Contáctanos
+                </a>
+
+
             </header>
         </section>
         <section id="about">
@@ -239,28 +244,47 @@
 
     </div>
     <section id="contact" class="py-6">
-        <div id="div-contact" class="max-w-screen-xl  mx-auto px-4 flex flex-col md:flex-row">
+        <div id="div-contact" class="max-w-screen-xl  mx-auto  flex flex-col md:flex-row">
             <!-- Contenido Izquierda -->
-            <div class="flex-1 mb-8 md:mb-0">
-                <!-- Aquí puedes agregar el contenido de la columna izquierda cuando lo decidas -->
-                <h2 class="text-3xl font-semibold text-center text-gray-800">Información Adicional</h2>
-                <p class="p-8">Este espacio puede contener información sobre tu empresa, detalles de contacto
-                    adicionales, un
-                    mapa, o cualquier otro elemento que consideres relevante.</p>
+            <div class="flex-1  mb-8 md:mb-0 md:mr-4">
+                <h2 id="first-col" class="text-3xl font-semibold text-center text-gray-800">Estamos listos para
+                    potenciar tu negocio
+                    con tecnologia</h2>
+                <p class="p-8">En Apolo, nos especializamos en transformar desafíos en oportunidades. Agendar una
+                    reunión con nosotros significa dar un paso adelante hacia:</p>
+                <ul class="p-4 list-disc list-inside">
+                    <li>Estrategias Personalizadas que se adaptan a tus necesidades específicas.</li>
+                    <li>Innovación y Crecimiento para mantener tu negocio a la vanguardia.</li>
+                    <li>Soporte Dedicado para acompañarte en cada paso del camino.</li>
+                </ul>
+                <p class="p-8">Agendate y descubrí cómo podemos ayudarte a alcanzar tus metas.</p>
+
+                <div class="flex justify-center  mt-4">
+                    <button id="btnBook">
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                            async></script>
+                        <a
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jesteves-nny/30min?hide_event_type_details=1&hide_gdpr_banner=1&text_color=5D1EA1'});return false;">Hablemos!📅</a>
+                    </button>
+                </div>
             </div>
 
             <!-- Formulario Contacto (Columna Derecha) -->
             <div class="flex-1">
-                <h2 class="text-3xl font-semibold text-center text-gray-800 ">Contáctanos</h2>
+                <h2 id="second-col" class="text-3xl font-semibold text-center">O completa el formulario y
+                    nos contactamos
+                    nosotros!</h2>
+
+
                 <form action="tu_endpoint_para_procesar_formulario" method="POST" class="rounded-lg p-2">
                     <div class="mb-2">
-                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nombre</label>
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nombre*</label>
                         <input type="text" id="name" name="name" required
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                     </div>
                     <div class="mb-2">
-                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo
-                            Electrónico</label>
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email*</label>
                         <input type="email" id="email" name="email" required
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                         <label for="company" class="block text-gray-700 text-sm font-bold mb-2">Empresa</label>
@@ -268,23 +292,38 @@
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                     </div>
                     <div class="mb-2">
+                        <label for="service" class="block text-gray-700 text-sm font-bold mb-2">¿En que podemos
+                            ayudarte?*</label>
+                        <select id="service" name="service" required
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="consultoria">Consultoría</option>
+                            <option value="nuevo_proyecto">Nuevo Proyecto</option>
+                            <option value="rescate_proyecto">Rescate de Proyecto</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">
                         <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Mensaje</label>
-                        <textarea id="message" name="message" rows="4" required
+                        <textarea id="message" name="message" rows="4"
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
-                            style="height: 150px;"></textarea>
+                            style="height: 100px;"></textarea>
                     </div>
                     <div class="mb-2 text-center">
                         <button type="submit"
-                            class="bg-blue-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Enviar</button>
+                            class=" hover:bg-green-700 text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline border border-white">Enviar</button>
+
                     </div>
                 </form>
+
             </div>
         </div>
     </section>
 
 
     <footer id="footer" class="bg-white dark:bg-gray-900">
-        <div class="mx-auto w-full max-w-screen-xl  p-8  pt-8 lg:pt-6  s:p-0">
+
+        <div class="mx-auto w-full px-12 pt-8 lg:pt-6 s:p-0">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="https://apolodev.com/" class="flex items-center">
@@ -333,7 +372,7 @@
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright©2024 Apolo. All Rights
                     Reserved.
                 </span>
-                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                <div id="icons" class="flex mt-4 sm:justify-between sm:mt-0">
                     <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 8 19">
