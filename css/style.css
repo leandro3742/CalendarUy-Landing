@@ -43,13 +43,13 @@ body {
 
 
 section{
-    height: 100vh;
+    height: auto;
 }
 
 /* Seccion banner */
 .banner {
     position: relative;
-    
+    height: 100vh;
   }
   .titulo-banner {
     position: absolute;
@@ -144,6 +144,18 @@ section{
 .services-img{
     align-items: center;
     margin: auto;
+    display: none;
+}
+.services-round{
+    width: 60%;
+    margin: auto;
+    margin-top: 5vh;
+    align-items: center;
+}
+.services-col{
+    width: 60%;
+    margin: auto;
+    display: none;
 }
 .about-text-container {
     width: 100%;
@@ -157,7 +169,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra el título y el contenedor de texto */
-    height: 100vh;
+    height: auto;
 }
 
 .about-title {
@@ -481,8 +493,11 @@ footer{
 
 @media (max-width: 480px) {
 /* Seccion banner */
+    .banner {
+        height: 100vh;
+    }
     .subtitle-banner{
-        margin-top: 4vh;
+        font-weight: bold;
         margin-bottom: 3vh;
         text-align: center;
         font-size: 2rem;
@@ -492,19 +507,18 @@ footer{
         font-size: 2rem; 
         left: 0%; 
         transform: translateY(15vh); 
-    
+        margin-top: 8vh;
         width: 50vw; 
         top: -10vh; 
     }
     .button-contact {
         position: absolute;
-        transform: translateY(60vh); 
-        margin-left: 10%; 
-        border-radius: 100px;
-        width: 70vw;
         
-        align-items: center;
-        vertical-align: middle;
+        margin: auto;
+        border-radius: 100px;
+        width: 70vw;  
+        left: 50%; /* Centrar horizontalmente */
+        transform: translateX(-50%) translateY(70vh);
         font-size: 1.5rem;
         background-color:rgb(255, 255, 255,0.7);
         font-family: 'Poppins', sans-serif;
@@ -527,7 +541,8 @@ footer{
     /* Seccion services */
     .services-title {
         font-size: 1.5rem;
-        
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
     .services-img{
         display: none;
@@ -536,6 +551,42 @@ footer{
     .services-col{
         width: 60%;
         margin: auto;
+        display: none;
+    }
+    .services-round{
+        width: 100%;
+        margin: auto;
+        margin-top: 5vh;
+    }
+
+    .left-text {
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        width: 40%;
+    }
+    
+    .right-text {
+        text-align: right;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        width: 40%;
+    }
+    .metho-col{
+        width: 60vw;
+        margin: auto;
+    }
+    .grid-container{
+        gap: 0%;
+    }
+    /* Seccion skills */
+    #skills{
+       
+        height: auto !important;
+    }
+    /* Seccion clientes */
+    #clients{
+        height: auto;
     }
     #image-aside{
     position: absolute;
@@ -548,8 +599,5 @@ footer{
     #image-sat{
       width: 20vw;
     }
-    .metho-col{
-        width: 70vw;
-        margin: auto;
-    }
+    
 }
