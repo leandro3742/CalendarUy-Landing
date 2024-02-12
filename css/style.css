@@ -538,7 +538,7 @@ footer{
 /* Seccion banner */
     .banner {
         height: 100vh;
-        padding-bottom: env(safe-area-inset-bottom);
+        height: calc(var(--vh, 1vh) * 100);
     }
     .subtitle-banner{
         font-weight: bold;
