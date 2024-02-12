@@ -16,15 +16,13 @@
 
 <body>
     <button id="btnVolverArriba">↑</button>
-
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#header" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="./images/Logo-Apolo.svg" class="h-11" alt="Apolo dev Logo" />
-
             </a>
-            <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-                <!-- <button type="button" data-dropdown-toggle="language-dropdown-menu"
+            <!-- <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                <button type="button" data-dropdown-toggle="language-dropdown-menu"
                     class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                     <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900">
@@ -55,8 +53,8 @@
                         </g>
                     </svg>
                     English
-                </button> -->
-                <!-- Dropdown -->
+                </button>
+                
                 <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
                     id="language-dropdown-menu">
                     <ul class="py-2 font-medium" role="none">
@@ -114,7 +112,7 @@
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
-            </div>
+            </div> -->
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
                 <ul
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 text-lg">
@@ -144,24 +142,24 @@
             </div>
         </div>
     </nav>
-    <img id="image-cohete" src="./images/Screenshot_2024-01-29_204345-removebg-preview.png" alt="">
-    <img id="image-sat" src="./images/satelite.png" alt="">
+    <img id="image-aside" src="./images/aside-image.png" alt="">
+    <img id="image-sat" src="./images/sat.png" alt="">
 
     <div class="container">
-        <section id="header">
-            <header>
-                <h1 class="titulo-header">Desarrollamos tecnología para </br> <b>propulsar tu negocio</b></h1>
-                <h2 id="subtitle">
-                    Web & Mobile solutions
-                </h2>
-                <!-- <button class="button-contact">Contactanos!</button> -->
-                <a href="#contact"
-                    class="button-contact text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 inline-flex items-center justify-center">
-                    Contáctanos
-                </a>
+        <section class="banner">
+
+            <h1 class="titulo-banner">Desarrollamos tecnología para </br> <b>propulsar tu negocio</b></h1>
+            <h2 class="subtitle-banner">
+                Web & Mobile solutions
+            </h2>
+            <!-- <button class="button-contact">Contactanos!</button> -->
+            <a href="#contact"
+                class="button-contact text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 inline-flex items-center justify-center">
+                Contáctanos
+            </a>
 
 
-            </header>
+
         </section>
         <section id="about">
             <h2 class="about-title">Acerca de nosotros</h2>
@@ -185,7 +183,8 @@
 
         <section id="services">
             <h2 class="services-title">Nuestros servicios</h2>
-            <img class="services-img" src="./images/Group 9.svg" alt="">
+            <img class="services-img" src="./images/services.svg" alt="">
+            <img class="services-col" src="./images/services-col.svg" alt="">
             <div class="synergy-text-container">
                 <div class="synergy-text left-text">
                     <p>Creemos firmemente en la sinergia con nuestros clientes. Entendemos que el conocimiento profundo
@@ -203,8 +202,8 @@
         </section>
         <section id="skills">
             <h2 class="services-title">Metodologia</h2>
-            <img id="roadmap-row" src="./images/Group 5ssV.svg" alt="Roadmap">
-            <img id="roadmap-col" src="./images/Group 6.svg" alt="Roadmap">
+            <img class="metho-row" src="./images/methodology.svg" alt="Methodology">
+            <img class="metho-col" src="./images/methodology-col.svg" alt="Methodology">
             <div class="grid-container">
                 <div class="advantages-title">
                     <h3>Ventajas</h3>
@@ -232,8 +231,7 @@
                 </div>
                 <div class="approach-image">
 
-                    <img src="./images/Screenshot_2024-02-03_005800-removebg-preview.png"
-                        alt="Enfoque Metodología Ágil">
+                    <img src="./images/planet.png" alt="Enfoque Metodología Ágil">
                 </div>
             </div>
         </section>

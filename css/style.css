@@ -6,7 +6,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-image: url("../images/jake-buonemani-WvK0EsbfG7U-unsplash.jpg"); 
+    background-image: url("../images/bg.jpg"); 
     background-size: cover; 
 
     width: 100%;
@@ -45,11 +45,13 @@ body {
 section{
     height: 100vh;
 }
-header {
+
+/* Seccion banner */
+.banner {
     position: relative;
     
   }
-  .titulo-header {
+  .titulo-banner {
     position: absolute;
    
     transform: translateY(10vh); 
@@ -72,6 +74,7 @@ header {
     font-family: 'Poppins', sans-serif;
     
 }
+/* Seccion nosotros */
 #contact{
     background-color:rgba(69, 19, 123, 0.977);
     width: 100%; 
@@ -90,7 +93,7 @@ header {
     color: white; /* Cambia el color de texto de las etiquetas a blanco */
     font: 1.5rem 'Poppins', sans-serif; /* Cambia el tipo de letra y el tamaño */
 }
-#image-cohete{
+#image-aside{
     position: absolute;
     margin-top: 4vh;
     
@@ -236,7 +239,7 @@ h2#about{
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
-h2#subtitle{
+.subtitle-banner{
     color: rgb(93, 30, 161);
    
     position: absolute;
@@ -250,13 +253,13 @@ h2#subtitle{
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
-#roadmap-row{
+.metho-row{
     width: 80%;
     align-items: center;
     margin: auto;
     margin-top: 5vh;
 }
-#roadmap-col{
+.metho-col{
     display: none;
 }
 .grid-container {
@@ -387,13 +390,13 @@ footer{
     h2#about{
         font-size: 1rem;
     }
-    .titulo-header {
+    .titulo-banner {
         font-size: 3rem; 
         
         top: -5vh;
     }
     
-      #image-cohete{
+      #image-aside{
         position: absolute;
         margin-top: 4vh;
         
@@ -401,16 +404,16 @@ footer{
         width: 30vw;
        
     }
-    h2#subtitle{
+    .subtitle-banner{
         margin-top: 12vh;
      margin-bottom: 6vh;
         padding-right: 0%;
         font-size: 3rem;
     }
-    #roadmap-row{
+    .metho-row{
         display: none;
     }
-    #roadmap-col{
+    .metho-col{
         display: block;
         margin-top: 10vh;
         width: 50vw;
@@ -477,18 +480,15 @@ footer{
 }
 
 @media (max-width: 480px) {
-    header img {
-        width: 50vw; 
-        max-width: 50%; 
-    }
-    h2#subtitle{
+/* Seccion banner */
+    .subtitle-banner{
         margin-top: 4vh;
         margin-bottom: 3vh;
         text-align: center;
         font-size: 2rem;
         padding: 0%;
     }
-    .titulo-header {
+    .titulo-banner {
         font-size: 2rem; 
         left: 0%; 
         transform: translateY(15vh); 
@@ -509,20 +509,47 @@ footer{
         background-color:rgb(255, 255, 255,0.7);
         font-family: 'Poppins', sans-serif;
         
-      }
-      #image-cohete{
-        position: absolute;
-        margin-top: 4vh;
-        
-        right: 0; 
-        width: 40vw;
-       
     }
-    #roadmap-col{
-        width: 70vw;
+    /* Seccion about */
+    #about{
+        height: auto;
+    }
+    .about-title {
+        font-size: 1.5rem;
+        
+    }
+    .first-text{
+        font-size: 1rem;
+    }
+    .second-text{
+        font-size: 1rem;
+    }
+    /* Seccion services */
+    .services-title {
+        font-size: 1.5rem;
+        
+    }
+    .services-img{
+        display: none;
+        width: 50vw;
+    }
+    .services-col{
+        width: 60%;
         margin: auto;
     }
+    #image-aside{
+    position: absolute;
+    margin-top: 4vh;
+    
+    right: 0; 
+    width: 40vw;
+    }
+
     #image-sat{
-        width: 20vw;
+      width: 20vw;
+    }
+    .metho-col{
+        width: 70vw;
+        margin: auto;
     }
 }
