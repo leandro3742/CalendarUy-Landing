@@ -537,8 +537,7 @@ footer{
     }
 /* Seccion banner */
     .banner {
-      
-        height: calc(var(--vh, 1vh) * 100);
+        height: 100vh;
     }
     .subtitle-banner{
         font-weight: bold;
@@ -551,7 +550,7 @@ footer{
         font-size: 2rem; 
         left: 0%; 
         transform: translateY(15vh); 
-        margin-top: 8vh;
+        
         width: 50vw; 
         top: -10vh; 
     }
@@ -569,12 +568,31 @@ footer{
         
     }
     /* Seccion about */
+    .about-text-container {
+        grid-template-columns: none; /* Esto desactiva las columnas */
+        grid-template-rows: auto auto auto; /* Crea tres filas */
+        width: 100%; /* La primera fila ocupará el 100% */
+    }
+    .about-text-container > *:nth-child(1) {
+        width: 90%; /* Ajusta el segundo y tercer elemento para que ocupen el 80% */
+        justify-self: center; /* Esto centrará los elementos en su celda de la cuadrícula */
+    }
+    .about-text-container > *:nth-child(2) {
+        width: 90%; /* Ajusta el primer elemento para que ocupe el 100% */
+        justify-self: center;
+        
+    }
+
+    .about-text-container > *:nth-child(3) {
+        width: 90%; /* Ajusta el segundo y tercer elemento para que ocupen el 80% */
+        justify-self: center; /* Esto centrará los elementos en su celda de la cuadrícula */
+    }
     #about{
         height: auto;
     }
     .about-title {
         font-size: 1.9rem;
-        
+        margin-bottom: 0px;
     }
     .first-text{
         font-size: 1rem;
