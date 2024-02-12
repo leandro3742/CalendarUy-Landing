@@ -35,3 +35,18 @@ document.addEventListener('scroll', function () {
         btnVolverArriba.style.bottom = '20px';
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var loader = document.getElementById('loader');
+    // Opcional: Ocultar el loader después de un tiempo específico
+    setTimeout(function () {
+        loader.style.transition = 'opacity 0.5s ease';
+        loader.style.opacity = 0;
+        setTimeout(function () {
+            loader.style.display = 'none';
+        }, 500); // Coincide con la duración de la transición
+    }, 500); // Ajusta este tiempo según lo rápido que generalmente se carga tu página
+});
+
+
