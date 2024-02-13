@@ -215,14 +215,7 @@ section{
     font: 1.5rem 'Poppins', sans-serif;
 }
 /* Seccion Servicios */
-.synergy-text-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left; 
-    color: #FFFFFF; 
-    margin: 20px; 
-}
+
 
 .synergy-text-container {
     width: 100%;
@@ -232,6 +225,7 @@ section{
     align-items: center;
     margin: auto;
     justify-content: space-between;
+    display: none;
 }
 
 .left-text {
@@ -260,7 +254,7 @@ section{
     display: none;
 }
 .services-round{
-    width: 80%;
+    width: 60%;
     margin: auto;
     margin-top: 50px;
     align-items: center;
@@ -279,24 +273,28 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 10vh; 
 }
 
 .service-item {
-    background-color: #f1f1f1; 
+    background: linear-gradient(180deg, #5D1EA1 0%, #7B58FA 74%);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 300px;
 }
 
 .service-item h3 {
-    color: #7B58FA;
-    margin-bottom: 10px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
+.service-item hr {
+margin-bottom: 5px;}
 
 .service-item p {
     font-size: 1rem;
-    color: #333; 
+    color: #ffffff; 
 }
 
 
@@ -342,7 +340,7 @@ section{
 
 .methodology-title {
     grid-area: methodology-title;
-    text-align: end;
+    text-align: start;
     font-size: 3rem;
     
 }
@@ -486,7 +484,8 @@ footer{
         
     }
     .methodology-title,.advantages-title{
-        font-size: 2rem;
+       font-size: 2rem;
+        margin-bottom: 3vh;
     }
     .left-text {
        width: 100%;
@@ -498,7 +497,7 @@ footer{
     .right-text {
        
         font-family: 'Poppins', sans-serif;
-        font-size: 0.7rem;
+        font-size: 1rem;
        
     }
     #image-sat{width: 20vw;}
