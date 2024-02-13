@@ -135,8 +135,8 @@ section{
 
 .synergy-text-container {
     width: 100%;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
+    padding-bottom: 50px;
+    padding-top: 100px;
     display: flex;
     align-items: center;
     margin: auto;
@@ -170,9 +170,9 @@ section{
     display: none;
 }
 .services-round{
-    width: 60%;
+    width: 80%;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 50px;
     align-items: center;
 }
 .services-col{
@@ -307,6 +307,7 @@ h2#about{
     gap: 20px; 
     color: #FFFFFF; 
     margin-top: 50px;
+    margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -465,6 +466,7 @@ footer{
            
             "approach-image";
             font-size: 0.8rem;
+        
     }
     .methodology-title,.advantages-title{
         font-size: 2rem;
