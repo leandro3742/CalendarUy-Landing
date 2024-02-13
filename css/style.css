@@ -108,12 +108,13 @@ section{
   }
   .titulo-banner {
     position: absolute;
-   
+    color: white;
     transform: translateY(10vh); 
     padding-bottom: 0vh;
     width: 75%; 
     font-size: 3rem;
-  }
+}
+
   .button-contact {
     position: absolute;
     transform: translateY(70vh);
@@ -127,11 +128,6 @@ section{
     background-color:rgb(255, 255, 255,0.7);
     
     font-family: 'Poppins', sans-serif;
-    
-}
-.titulo-banner{
-    color: white;
-    font-size: large;
     
 }
 
