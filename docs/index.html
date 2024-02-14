@@ -306,7 +306,7 @@
                     nosotros!</h2>
 
 
-                <form action="tu_endpoint_para_procesar_formulario" method="POST" class="rounded-lg p-2">
+                <form action="submit" id="form-contact" method="POST" class="rounded-lg p-2">
                     <div class="mb-2">
                         <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nombre*</label>
                         <input type="text" id="name" name="name" required
@@ -339,12 +339,14 @@
                             style="height: 100px;"></textarea>
                     </div>
                     <div class="mb-2 text-center">
-                        <button type="submit"
+                        <button id="form-submit" type="submit"
                             class=" hover:bg-green-700 text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline border border-white">Enviar</button>
 
                     </div>
                 </form>
-
+                <div id="mensajeExito" class="bg-green-700 text-3xl  text-center mx-auto">
+                    ¡El formulario ha sido enviado con éxito!
+                </div>
             </div>
         </div>
     </section>

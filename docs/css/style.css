@@ -425,6 +425,15 @@ margin-bottom: 5px;}
     font-family: 'poppins', sans-serif;
 
 }
+#mensajeExito{
+    display:none;
+    background-color:  #388E3C;
+    color:white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
 /* Seccion footer */
 footer{
     height: auto;
