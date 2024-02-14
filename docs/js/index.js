@@ -47,6 +47,21 @@ document.addEventListener('scroll', function () {
         btnVolverArriba.style.bottom = '20px';
     }
 });
+document.addEventListener('scroll', function () {
+    var icon = document.getElementById('icon-wsp');
+    var footer = document.getElementById('footer');
+
+    var footerRect = footer.getBoundingClientRect();
+    var btnRect = icon.getBoundingClientRect();
+
+    var bottomSpace = window.innerHeight - footerRect.top;
+
+    if (bottomSpace > 0) {
+        icon.style.bottom = bottomSpace + 20 + 'px';
+    } else {
+        icon.style.bottom = '20px';
+    }
+});
 
 
 

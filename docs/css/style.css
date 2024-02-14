@@ -12,6 +12,26 @@ body {
     width: 100%;
 
 }
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    left: 30px;
+    background: green;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.btn-wsp:hover{
+    background: #36998e;
+    color: #fff;
+    text-decoration: none;
+}
 .loader {
     position: fixed;
     left: 0;
@@ -441,7 +461,16 @@ footer{
    
 }
 
-
+#info-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    
+    height: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
 #icons{
     width: 10vw;
 }
